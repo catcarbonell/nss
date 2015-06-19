@@ -1,5 +1,4 @@
 #!/bin/bash
-#Bash project
 highlight="\033[34;43m"
 bold="\033[1m"
 normal="\033[0m]"
@@ -15,7 +14,8 @@ printf "\tFree Space:\T%s\n" $freespace
 echo -e $highlight"This system info summary has been saved to $logfile"$normal
 cat <<- EOF > $logfile
 
+EOF
+
 printf "SYS:\t%s\n" $MACHTYPE >> $logfile
 printf "BASH:\t%s\n" $BASH_VERSION >> $logfile
-
 
